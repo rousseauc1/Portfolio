@@ -1,12 +1,12 @@
-import { useState } from 'react'
-import './App.css'
-import ProjectPage from './components/ProjectCard'
+import BackToTopArrow from "./components/BackToTopArrow"
+import Footer from "./components/Footer"
 
 function App() {
 
   return (
     <>
-      <p>This is my Personal Portfolio</p>
+      <Footer></Footer>
+      <BackToTopArrow></BackToTopArrow>
     </>
   )
 }

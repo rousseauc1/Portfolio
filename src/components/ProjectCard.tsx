@@ -1,14 +1,14 @@
 import { useState } from "react";
-import Project from "../pages/Projects";
 
-function ProjectPage() {
+function ProjectCard() {
     
 
 
-
-
-
+    return (
+        <>
+        </>
+    )
 
 }
 
-export default ProjectPage;
+export default ProjectCard;
