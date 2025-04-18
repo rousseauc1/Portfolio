@@ -1,30 +1,13 @@
-import { useNavigate } from 'react-router-dom';
-import '../styles/navbar.css';
+import { Link } from 'react-router-dom';
 
 function NavBar() {
-    const navigate = useNavigate();
-
-    const goToProjects = () => {
-        navigate('/Projects');
-    }
-
-    const goToAboutMe = () => {
-        navigate('/About');
-    }
-
-    const goToResume = () => {
-
-    }
-
-    const goToHome = () => {
-
-    }
-
     return (
-        // need About Me, Resume, Home, and Projects
-        <div>
-            
-        </div>
+        <nav className="flex gap-4 p-4 bg-white shadow-md">
+            <Link to="/Home" className="hover:text-blue-500 transition-colors">Home</Link>
+            <Link to="/Projects" className="hover:text-blue-500 transition-colors">Projects</Link>
+            <Link to="/Resume" className="hover:text-blue-500 transition-colors">Resume</Link>
+            <Link to="/About" className="hover:text-blue-500 transition-colors">About Me</Link>
+        </nav>
     )
 }
 
