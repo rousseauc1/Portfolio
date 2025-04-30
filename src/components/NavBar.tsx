@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 
-function NavBar() {
+const NavBar = () => {
     return (
-        <nav className="flex gap-4 p-4 bg-white shadow-md">
-            <Link to="/Home" className="hover:text-blue-500 transition-colors">Home</Link>
-            <Link to="/Projects" className="hover:text-blue-500 transition-colors">Projects</Link>
-            <Link to="/Resume" className="hover:text-blue-500 transition-colors">Resume</Link>
-            <Link to="/About" className="hover:text-blue-500 transition-colors">About Me</Link>
+        <nav className="flex gap-8 justify-end px-8 pb-4">
+            <Link to="/Home" className="text-gray-600 hover:text-gray-900 transition-colors">Home</Link>
+            <Link to="/Projects" className="text-gray-600 hover:text-gray-900 transition-colors">Projects</Link>
+            <Link to="/Resume" className="text-gray-600 hover:text-gray-900 transition-colors">Resume</Link>
+            <Link to="/About" className="text-gray-600 hover:text-gray-900 transition-colors">About</Link>
         </nav>
     )
 }

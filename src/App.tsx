@@ -6,11 +6,13 @@ import Home from "./pages/Home"
 import Projects from "./pages/Projects"
 import Resume from "./pages/Resume"
 import About from "./pages/About"
+import Header from './components/Header';
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <div className="min-h-screen flex flex-col">
+        <Header />
         <NavBar />
         <main className="flex-grow">
           <Routes>

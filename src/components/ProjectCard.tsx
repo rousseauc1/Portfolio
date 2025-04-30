@@ -1,15 +1,11 @@
 import { useState } from "react";
 
-function ProjectCard() {
-    
-
-
+const ProjectCard = () => {
     return (
         <div>
             
         </div>
     )
-
 }
 
 export default ProjectCard;

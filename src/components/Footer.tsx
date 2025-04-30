@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-function Footer() {
+const Footer = () => {
     // Define possible states for form submission: idle (initial), success, or error
     const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
