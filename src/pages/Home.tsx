@@ -71,20 +71,24 @@ const Home = () => {
                 </section>
 
                 {/* Quote Section */}
-                <section className="py-24 px-10 bg-[#5c4d3f]">
+                <section className="py-18 px-10 bg-[#1b1b1d]">
                     <div className="max-w-7xl mx-auto">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                             <div className="w-full h-[400px] rounded-lg overflow-hidden shadow-xl">
                                 <div className="w-full h-full bg-[#4a3e32] flex items-center justify-center">
-                                    <span className="text-white text-xl">Quote Image Placeholder</span>
+                                <img 
+                                    src="/assets/images/tech.gif" 
+                                    alt="About Cade" 
+                                    className="w-full h-full object-cover"
+                                />
                                 </div>
                             </div>
                             <div className="space-y-6">
                                 <blockquote className="text-3xl md:text-4xl font-light text-white leading-relaxed">
-                                    "Your quote will go here. This is a placeholder for the inspirational quote you want to share."
+                                    "The best way to predict the future is to create it."
                                 </blockquote>
                                 <p className="text-xl text-gray-200">
-                                    - Author Name
+                                    - Peter Drucker
                                 </p>
                             </div>
                         </div>
