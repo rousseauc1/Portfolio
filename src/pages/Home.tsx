@@ -75,11 +75,11 @@ const Home = () => {
                     <div className="max-w-7xl mx-auto">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                             <div className="w-full h-[400px] rounded-lg overflow-hidden shadow-xl">
-                                <div className="w-full h-full bg-[#4a3e32] flex items-center justify-center">
+                                <div className="w-full h-full flex items-center justify-center">
                                 <img 
-                                    src="/assets/images/tech.gif" 
+                                    src="/assets/images/innovation.gif" 
                                     alt="About Cade" 
-                                    className="w-full h-full object-cover"
+                                    className="w-[90%] h-[90%] object-contain"
                                 />
                                 </div>
                             </div>
@@ -99,13 +99,20 @@ const Home = () => {
                 <section className="py-24 px-10">
                     <div className="max-w-7xl mx-auto">
                         <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-16 text-center">
-                            My Journey
+                            Timeline
                         </h2>
                         <div className="min-h-[600px] bg-gray-50 rounded-lg shadow-lg p-8">
                             {/* Timeline content will go here */}
                             <div className="text-center text-gray-500 text-xl">
-                                Timeline content will be implemented here
+                                My journey in software engineering has been a blend of learning, growth, and exploration.
+                                I have delved into various technologies, honed my skills, and embraced challenges that have shaped me into the developer I am today.
+                                I am excited to continue this journey, pushing boundaries and creating innovative solutions.
                             </div>
+                            <img 
+                                src="/assets/images/Git-Commit-Chart.png" 
+                                alt="Timeline" 
+                                className="w-full h-full object-cover"
+                            />
                         </div>
                     </div>
                 </section>
