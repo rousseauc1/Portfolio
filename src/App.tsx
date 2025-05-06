@@ -7,10 +7,12 @@ import Projects from "./pages/Projects"
 import Resume from "./pages/Resume"
 import About from "./pages/About"
 import Header from './components/Header';
+import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <div className="min-h-screen flex flex-col">
         <Header />
         <NavBar />
