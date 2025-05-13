@@ -5,25 +5,34 @@ import ProjectOne from "../pages/ProjectOne"
 
 const Projects = () => {
     return (
-        <div className="min-h-screen p-8">
-            <div>
-                <label>My Projects</label>
-                <label>This includes both academic and also personal projects that showcase my work, in a personal
-                    and also an academic / professional setting.
-                </label>
-            </div>
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
+        <div className="min-h-screen p-8 bg-[#94877a]">
+            <h1 className="text-4xl font-bold mb-8 text-[#f3f4f6]">My Projects</h1>
+            <ProjectCard
+                imageUrl="/assets/images/wordle.png"
+                title="Wordle Game"
+                description="A JavaFX-based game inspired by Wordle, developed in a team of five 
+                using Scrum methodology. Features include word validation, feedback logic, and a 
+                polished graphical interface."
+                projectNumber={"One"}
+            />
 
-            {/* <BrowserRouter>
-                <Routes>
-                    <Route path="/Projects" element={<Projects/>} />
-                    <Route path="/Projects" element={<ProjectOne/>} />
-                    <Route path="/Projects" element={<Projects/>} />
-                    <Route path="/Projects" element={<Projects/>} />
-                </Routes>
-            </BrowserRouter> */}
+            <ProjectCard
+                imageUrl="/assets/images/expedia.png"
+                title="Travel Dataset Analysis"
+                description="Collaborated on analyzing a travel dataset using both supervised and 
+                unsupervised machine learning models. Focused on extracting insights, evaluating 
+                performance, and communicating findings through a detailed report."
+                projectNumber={"Two"}
+            />
+
+            <ProjectCard
+                imageUrl="/assets/images/website.png"
+                title="Personal Portfolio (this website)"
+                description="A responsive website built with TypeScript, React, and Tailwind CSS to 
+                showcase my work and skills. Designed with a clean, modern aesthetic and modular code 
+                for scalability and performance."
+                projectNumber={"Three"}
+            />
         </div>
     )
 }

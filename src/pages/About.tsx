@@ -6,14 +6,13 @@ const About = () => {
                 {/* Text Section */}
                 <div>
                     <p className="text-xl text-[#1b1b1d] leading-relaxed mb-6">
-                        My name is Cade Rousseau and I'm a freshman at MSOE, studying Software Engineering. 
-                        Additionally, I'm pursuing a minor in Data Science, and through Army ROTC also 
-                        Military Science. I'm planning on putting my skills to use writing software while 
-                        also being in the National Guard.
+                        My name is Cade Rousseau and I'm a sophomore at MSOE, studying Software Engineering. 
+                        Additionally, I'm pursuing a minor in Data Science. I am currently looking for an
+                        internship part-time during the school year, and / or during the summer of 2026.
                     </p>
                     <p className="text-xl text-[#1b1b1d] leading-relaxed">
                         I'm from Waukesha, WI. Some of my hobbies are going to the gym, skiing, sports, and 
-                        videogames. I also enjoy listening to music, particularly rap, and alternative rock.
+                        videogames. I also enjoy listening to music, and reading.
                     </p>
                 </div>
 
