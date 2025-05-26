@@ -5,8 +5,8 @@ import ProjectOne from "../pages/ProjectOne"
 
 const Projects = () => {
     return (
-        <div className="min-h-screen p-8 bg-[#94877a]">
-            <h1 className="text-4xl font-bold mb-8 text-[#f3f4f6]">My Projects</h1>
+        <div className="min-h-screen p-8 bg-[#94877a] dark:bg-gray-700 transition-colors duration-300">
+            <h1 className="text-4xl font-bold mb-8 text-[#f3f4f6] dark:text-gray-100 transition-colors duration-300">My Projects</h1>
             <ProjectCard
                 imageUrl="/assets/images/wordle.png"
                 title="Wordle Game"

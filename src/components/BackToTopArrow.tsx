@@ -1,25 +1,42 @@
+import { useState, useEffect } from 'react';
+
 const BackToTopArrow = () => {
-    // built in method to scroll the window, click event
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const toggleVisibility = () => {
+            if (window.pageYOffset > 300) {
+                setIsVisible(true);
+            } else {
+                setIsVisible(false);
+            }
+        };
+
+        window.addEventListener('scroll', toggleVisibility);
+
+        return () => window.removeEventListener('scroll', toggleVisibility);
+    }, []);
+
     const scrollToTop = () => {
         window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
+            top: 0,
+            behavior: 'smooth'
         });
-      };
+    };
 
-    // return a button that handles this
     return (
-        <button 
-            onClick={scrollToTop}
-            className="mx-auto my-8 w-12 h-12 
-            rounded-full bg-[#5c4d3f] text-white text-2xl 
-            font-bold shadow-lg hover:bg-[#4a3e32] transition-colors 
-            duration-200 flex items-center justify-center focus:outline-none 
-            focus:ring-2 focus:ring-[#5c4d3f] focus:ring-opacity-50"
-        >
-            ↑
-        </button>
-    )
-}
+        <div className="w-full bg-white dark:bg-gray-900 transition-colors duration-300">
+            {isVisible && (
+                <button
+                    onClick={scrollToTop}
+                    className="fixed bottom-8 right-8 p-3 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 rounded-full shadow-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-gray-400 dark:focus:ring-gray-600 dark:shadow-gray-800/50"
+                    aria-label="Back to top"
+                >
+                    ↑
+                </button>
+            )}
+        </div>
+    );
+};
 
 export default BackToTopArrow;
