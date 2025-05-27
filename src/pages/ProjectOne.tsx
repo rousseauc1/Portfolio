@@ -23,8 +23,8 @@ const ProjectOne = () => {
                         </div>
                         <div className="md:w-1/3">
                             <img 
-                                src="/assets/images/wordle1.jpg" 
-                                alt="Portfolio website screenshot" 
+                                src="/assets/images/wordle4.jpg" 
+                                alt="Wordle title screen" 
                                 className="rounded-lg w-full h-64 object-contain shadow-md dark:shadow-gray-700/50"
                             />
                         </div>
@@ -60,7 +60,7 @@ const ProjectOne = () => {
                         <div className="md:w-1/3">
                             <img 
                                 src="/assets/images/wordle3.jpg" 
-                                alt="Portfolio website screenshot" 
+                                alt="Evil Wordle screenshot" 
                                 className="rounded-lg w-full h-64 object-contain shadow-md dark:shadow-gray-700/50"
                             />
                         </div>

@@ -1,7 +1,4 @@
-import { useState } from "react";
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ProjectCard from "../components/ProjectCard"
-import ProjectOne from "../pages/ProjectOne"
 
 const Projects = () => {
     return (

@@ -1,9 +1,6 @@
 import { Link } from 'react-router-dom';
-import { useTheme } from '../context/ThemeContext';
 
 const Home = () => {
-    const { isDarkMode } = useTheme();
-
     return (
         <div className="min-h-screen flex flex-col bg-white dark:bg-gray-800 transition-colors duration-300">
             <main className="flex-grow">
