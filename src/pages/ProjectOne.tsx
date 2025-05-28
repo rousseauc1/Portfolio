@@ -6,27 +6,29 @@ const ProjectOne = () => {
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 md:mb-8 text-[#5c4d3f] dark:text-gray-100 transition-colors duration-300 text-center">Wordle Application</h1>
             <div className="max-w-6xl mx-auto">
                 <div className="bg-white dark:bg-gray-600 rounded-lg shadow-lg dark:shadow-gray-700/50 p-4 sm:p-6 md:p-8 transition-colors duration-300">
-                    {/* First section with image */}
+                    {/* First section with video */}
                     <div className="flex flex-col md:flex-row gap-4 sm:gap-6 md:gap-8 mb-4 sm:mb-6 md:mb-8">
                         <div className="flex-1">
                             <p className="text-sm sm:text-base md:text-lg text-[#4a3e32] dark:text-gray-200 transition-colors duration-300">
                                 During a semester-long software engineering course, I collaborated with four 
-                                peers to develop a fully functional Wordle-style game using Java and JavaFX. 
-                                From the outset, we designed the project with real-world software development 
-                                in mind. We implemented the Scrum methodology, organizing our work into sprints 
-                                and holding regular stand-ups to assess progress and adjust goals. GitLab 
-                                served as our version control system, allowing us to manage collaboration 
-                                effectively, merge branches seamlessly, and track development history. 
-                                These practices mimicked industry standards and taught us how to manage 
-                                team dynamics and development workflows in a professional setting.
+                                peers—Nikolas Palacios, Jack Shepski, Alex Ewart, and Nathan Miller—to develop 
+                                a fully functional Wordle-style game using Java and JavaFX. From the outset, 
+                                we designed the project with real-world software development in mind. We implemented 
+                                the Scrum methodology, organizing our work into sprints and holding regular stand-ups 
+                                to assess progress and adjust goals. GitLab served as our version control system, 
+                                allowing us to manage collaboration effectively, merge branches seamlessly, and track 
+                                development history. These practices mimicked industry standards and taught us how to 
+                                manage team dynamics and development workflows in a professional setting.
                             </p>
                         </div>
                         <div className="md:w-1/3">
-                            <img 
-                                src="/assets/images/wordle4.jpg" 
-                                alt="Wordle title screen" 
+                            <video 
+                                src="/assets/images/wordle2.mp4"
+                                controls
                                 className="rounded-lg w-full h-48 sm:h-56 md:h-64 object-contain shadow-md dark:shadow-gray-700/50"
-                            />
+                            >
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                     </div>
 
@@ -58,11 +60,13 @@ const ProjectOne = () => {
                             </p>
                         </div>
                         <div className="md:w-1/3">
-                            <img 
-                                src="/assets/images/wordle3.jpg" 
-                                alt="Evil Wordle screenshot" 
+                        <video 
+                                src="/assets/images/wordle3.mp4"
+                                controls
                                 className="rounded-lg w-full h-48 sm:h-56 md:h-64 object-contain shadow-md dark:shadow-gray-700/50"
-                            />
+                            >
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                     </div>
 

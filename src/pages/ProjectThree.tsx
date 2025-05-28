@@ -15,9 +15,13 @@ const ProjectThree = () => {
                                 design philosophies. I built it over the course of two months using TypeScript, 
                                 React, and Tailwind CSS. This project served as an introduction to TypeScript—a 
                                 typed superset of JavaScript widely used in modern development—and gave me 
-                                hands-on experience with React's component-based architecture. The primary 
-                                goal was to create a clean, responsive, and professional space where I could 
-                                display my projects, resume, and personal background.
+                                hands-on experience with React's component-based architecture. For deployment, 
+                                I utilized AWS Amplify, which provided a seamless CI/CD pipeline that automatically 
+                                builds and deploys the site whenever changes are pushed to the repository. This 
+                                experience with AWS Amplify taught me about cloud deployment, continuous integration, 
+                                and how to manage production environments effectively. The primary goal was to create 
+                                a clean, responsive, and professional space where I could display my projects, resume, 
+                                and personal background.
                             </p>
                         </div>
                         <div className="md:w-1/3">
@@ -86,6 +90,7 @@ const ProjectThree = () => {
                             <li>React</li>
                             <li>Tailwind CSS</li>
                             <li>Vite</li>
+                            <li>AWS Amplify</li>
                         </ul>
                     </div>
                 </div>

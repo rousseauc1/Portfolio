@@ -17,7 +17,7 @@ const ProjectTwo = () => {
                         </div>
                         <div className="flex-1">
                             <p className="text-sm sm:text-base md:text-lg text-[#4a3e32] dark:text-gray-200 transition-colors duration-300">
-                                In this data science project, I partnered with another student to explore a 
+                                In this data science project, I partnered with Gavin Konitzer to explore a 
                                 massive dataset containing over 100,000 entries related to global travel trends. 
                                 Our goal was to uncover patterns and test hypotheses using both supervised and 
                                 unsupervised machine learning models. From the beginning, we treated data 

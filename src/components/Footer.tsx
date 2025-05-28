@@ -59,6 +59,7 @@ const Footer = () => {
                             type="text"
                             id="firstName" 
                             name="firstName" 
+                            maxLength={50}
                             className="border border-gray-400 dark:border-gray-600 p-2 text-sm sm:text-base bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition-colors duration-300"
                         />
                     </div>
@@ -68,6 +69,7 @@ const Footer = () => {
                             type="text" 
                             id="lastName" 
                             name="lastName" 
+                            maxLength={50}
                             className="border border-gray-400 dark:border-gray-600 p-2 text-sm sm:text-base bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition-colors duration-300"
                         />
                     </div>
@@ -80,6 +82,7 @@ const Footer = () => {
                         id="email" 
                         name="email" 
                         required 
+                        maxLength={254}
                         className="border border-gray-400 dark:border-gray-600 p-2 text-sm sm:text-base bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition-colors duration-300"
                     />
                 </div>
@@ -90,6 +93,7 @@ const Footer = () => {
                         id="message"
                         name="message" 
                         required 
+                        maxLength={1000}
                         className="border border-gray-400 dark:border-gray-600 p-2 text-sm sm:text-base min-h-[120px] sm:min-h-[150px] bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition-colors duration-300"
                     />
                 </div>
