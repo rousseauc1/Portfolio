@@ -3,7 +3,7 @@ import ProjectNavigation from '../components/ProjectNavigation';
 const ProjectTwo = () => {
     return (
         <div className="min-h-screen p-4 sm:p-6 md:p-8 bg-[#f5f0e6] dark:bg-gray-700 transition-colors duration-300">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 md:mb-8 text-[#5c4d3f] dark:text-gray-100 transition-colors duration-300">Travel Dataset Analysis</h1>
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 md:mb-8 text-[#5c4d3f] dark:text-gray-100 transition-colors duration-300 text-center">Travel Dataset Analysis</h1>
             <div className="max-w-6xl mx-auto">
                 <div className="bg-white dark:bg-gray-600 rounded-lg shadow-lg dark:shadow-gray-700/50 p-4 sm:p-6 md:p-8 transition-colors duration-300">
                     {/* First section with image */}

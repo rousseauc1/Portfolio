@@ -3,9 +3,9 @@ import ProjectCard from "../components/ProjectCard"
 const Projects = () => {
     return (
         <div className="min-h-screen p-4 sm:p-6 md:p-8 bg-[#94877a] dark:bg-gray-700 transition-colors duration-300">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 md:mb-8 text-[#f3f4f6] dark:text-gray-100 transition-colors duration-300">My Projects</h1>
-            <div className="max-w-6xl mx-auto">
-                <div className="space-y-4 sm:space-y-6 md:space-y-8">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 md:mb-8 text-[#f3f4f6] dark:text-gray-100 transition-colors duration-300 text-center">My Projects</h1>
+            <div className="max-w-4xl sm:max-w-5xl md:max-w-7xl mx-auto">
+                <div className="space-y-6 sm:space-y-8 md:space-y-12 flex flex-col items-center">
                     <ProjectCard
                         imageUrl="/assets/images/wordle.png"
                         title="Wordle Game"

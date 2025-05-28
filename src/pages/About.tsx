@@ -5,7 +5,7 @@ const About = () => {
                 <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 md:mb-8 text-[#1b1b1d] dark:text-gray-100 transition-colors duration-300">About Me</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
                     {/* Text Section */}
-                    <div className="space-y-4 sm:space-y-6">
+                    <div className="bg-white dark:bg-gray-600 p-4 sm:p-6 md:p-8 rounded-lg shadow-md dark:shadow-gray-700/50 transition-colors duration-300 space-y-4 sm:space-y-6">
                         <p className="text-sm sm:text-base md:text-lg text-[#1b1b1d] dark:text-gray-200 leading-relaxed transition-colors duration-300">
                             My name is Cade Rousseau and I'm a incoming junior at MSOE, studying Software Engineering. 
                             Additionally, I'm pursuing a minor in Data Science. I am currently looking for an
@@ -28,7 +28,7 @@ const About = () => {
                 </div>
 
                 {/* Career Goals Section */}
-                <div className="mt-8 sm:mt-12 md:mt-16">
+                <div className="bg-white dark:bg-gray-600 p-4 sm:p-6 md:p-8 mt-8 sm:mt-12 md:mt-16 rounded-lg shadow-md dark:shadow-gray-700/50 transition-colors duration-300">
                     <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#1b1b1d] dark:text-gray-100 mb-4 sm:mb-6 transition-colors duration-300">Career Goals & Aspirations</h2>
                     <p className="text-sm sm:text-base md:text-lg text-[#1b1b1d] dark:text-gray-200 leading-relaxed transition-colors duration-300">
                         I aspire to work in the field of software engineering, focusing on developing innovative 

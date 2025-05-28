@@ -1,8 +1,14 @@
 const Resume = () => {
-    const resumePdfPath = '/assets/images/CadeRousseau_Resume_FullStack_DS_AWS.pdf'; // Update with the correct path to your PDF
+    const resumePdfPath = '/assets/images/CadeRousseau_Resume_FullStack_DS_AWS.pdf';
 
     const handleDownload = () => {
-        window.open(resumePdfPath, '_blank'); // Opens the PDF in a new tab, triggering the browser's download
+        // Create a temporary anchor element
+        const link = document.createElement('a');
+        link.href = resumePdfPath;
+        link.download = 'CadeRousseau_Resume_FullStack_DS_AWS.pdf'; // This will be the name of the downloaded file
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     };
 
     return (
