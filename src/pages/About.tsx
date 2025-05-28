@@ -1,8 +1,8 @@
 const About = () => {
     return (
         <div className="min-h-screen p-4 sm:p-6 md:p-8 bg-[#fdf8f4] dark:bg-gray-700 transition-colors duration-300">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 md:mb-8 text-[#1b1b1d] dark:text-gray-100 transition-colors duration-300">About Me</h1>
             <div className="max-w-6xl mx-auto">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 md:mb-8 text-[#1b1b1d] dark:text-gray-100 transition-colors duration-300">About Me</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
                     {/* Text Section */}
                     <div className="space-y-4 sm:space-y-6">
@@ -22,7 +22,7 @@ const About = () => {
                         <img
                             src={'/assets/images/Car2.jpg'}
                             alt="Image of Cade"
-                            className="w-full max-w-[500px] h-auto mx-auto object-cover border border-gray-300 dark:border-gray-600 shadow-lg dark:shadow-gray-700/50 transition-colors duration-300"
+                            className="w-full max-w-[500px] h-auto object-cover border border-gray-300 dark:border-gray-600 shadow-lg dark:shadow-gray-700/50 transition-colors duration-300"
                         />
                     </div>
                 </div>

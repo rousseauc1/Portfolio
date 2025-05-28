@@ -1,5 +1,5 @@
 const Resume = () => {
-    const resumePdfPath = '/assets/images/Resume.pdf'; // Update with the correct path to your PDF
+    const resumePdfPath = '/assets/images/CadeRousseau_Resume_FullStack_DS_AWS.pdf'; // Update with the correct path to your PDF
 
     const handleDownload = () => {
         window.open(resumePdfPath, '_blank'); // Opens the PDF in a new tab, triggering the browser's download

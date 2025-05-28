@@ -5,7 +5,7 @@ const Footer = () => {
     const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
     return (
-        <div className="bg-[#faf3eb] dark:bg-gray-900 min-h-screen p-8 sm:p-12 md:p-16 flex flex-col gap-8 sm:gap-12 md:gap-16 md:flex-row md:justify-center md:items-start transition-colors duration-300">
+        <div className="bg-[#faf3eb] dark:bg-gray-900 p-8 sm:p-12 md:p-16 flex flex-col gap-8 sm:gap-12 md:gap-16 md:flex-row md:justify-center md:items-start transition-colors duration-300">
             {/* Left Side - Contact Info */}
             <div className="flex-1 flex flex-col items-center gap-4 sm:gap-5 md:gap-6">
                 <h3 className="text-2xl sm:text-3xl md:text-4xl font-serif text-gray-800 dark:text-gray-100 transition-colors duration-300">Contact Me</h3>
@@ -55,8 +55,8 @@ const Footer = () => {
                 <div className="flex gap-3 sm:gap-4 flex-wrap">
                     <div className="flex flex-col flex-1 min-w-[200px]">
                         <label htmlFor="firstName" className="text-xs sm:text-sm mb-1 text-gray-700 dark:text-gray-300 transition-colors duration-300">First Name</label>
-                        <input 
-                            type="text" 
+                        <input
+                            type="text"
                             id="firstName" 
                             name="firstName" 
                             className="border border-gray-400 dark:border-gray-600 p-2 text-sm sm:text-base bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition-colors duration-300"
@@ -64,7 +64,7 @@ const Footer = () => {
                     </div>
                     <div className="flex flex-col flex-1 min-w-[200px]">
                         <label htmlFor="lastName" className="text-xs sm:text-sm mb-1 text-gray-700 dark:text-gray-300 transition-colors duration-300">Last Name</label>
-                        <input 
+                        <input
                             type="text" 
                             id="lastName" 
                             name="lastName" 
@@ -86,16 +86,16 @@ const Footer = () => {
 
                 <div className="flex flex-col">
                     <label htmlFor="message" className="text-xs sm:text-sm mb-1 text-gray-700 dark:text-gray-300 transition-colors duration-300">Message</label>
-                    <textarea 
-                        id="message" 
+                    <textarea
+                        id="message"
                         name="message" 
                         required 
                         className="border border-gray-400 dark:border-gray-600 p-2 text-sm sm:text-base min-h-[120px] sm:min-h-[150px] bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition-colors duration-300"
                     />
                 </div>
 
-                <button 
-                    type="submit" 
+                <button
+                    type="submit"
                     className="bg-[#5c4d3f] dark:bg-gray-700 text-white text-base sm:text-lg py-2 sm:py-3 px-3 sm:px-4 border-none cursor-pointer hover:bg-[#4a3e32] dark:hover:bg-gray-600 transition-colors duration-300 shadow-lg dark:shadow-gray-800/50"
                 >
                     Send
