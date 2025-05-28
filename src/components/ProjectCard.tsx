@@ -11,7 +11,7 @@ const ProjectCard = ({ imageUrl, title, description, projectNumber }: ProjectCar
     const navigate = useNavigate();
 
     return (
-        <div className="flex flex-col md:flex-row bg-[#f5f0e6] dark:bg-gray-800 rounded-lg shadow-lg dark:shadow-gray-700/50 overflow-hidden mb-8 hover:shadow-xl transition-all duration-300 border-2 border-transparent dark:border-gray-600">
+        <div className="flex flex-col md:flex-row bg-[#f5f0e6] dark:bg-gray-800 rounded-lg shadow-lg dark:shadow-gray-700/50 overflow-hidden hover:shadow-xl transition-all duration-300 border-2 border-transparent dark:border-gray-600">
             <div className="md:w-2/3 p-6">
                 <h2 className="text-2xl font-bold mb-4 text-[#5c4d3f] dark:text-gray-100 transition-colors duration-300">{title}</h2>
                 <p className="text-[#4a3e32] dark:text-gray-200 mb-6 transition-colors duration-300">{description}</p>
