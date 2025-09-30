@@ -1,11 +1,11 @@
 const Resume = () => {
-    const resumePdfPath = '/assets/images/CadeRousseau_Resume_FullStack_DS_AWS.pdf';
+    const resumePdfPath = '/assets/images/CadeRousseau_Resume_FullStack.pdf';
 
     const handleDownload = () => {
         // Create a temporary anchor element
         const link = document.createElement('a');
         link.href = resumePdfPath;
-        link.download = 'CadeRousseau_Resume_FullStack_DS_AWS.pdf'; // This will be the name of the downloaded file
+        link.download = 'CadeRousseau_Resume_FullStack.pdf'; // This will be the name of the downloaded file
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -46,11 +46,21 @@ const Resume = () => {
                         Download Resume
                     </button>
                 </div>
+                {/* Front of Resume */}
+                <div className="w-full h-auto rounded-lg overflow-hidden shadow-xl dark:shadow-gray-700/50 mb-6 md:mb-8">
+                    <img
+                        src={'/assets/images/CadeRousseau_Resume_FullStack-1.png'}
+                        alt="Cade's Resume - Front"
+                        className="w-full max-w-[600px] h-auto mx-auto object-contain border border-gray-300 dark:border-gray-600 shadow-lg dark:shadow-gray-700/50 transition-colors duration-300"
+                    />
+                </div>
+                
+                {/* Back of Resume */}
                 <div className="w-full h-auto rounded-lg overflow-hidden shadow-xl dark:shadow-gray-700/50">
                     <img
-                        src={'/assets/images/resume-1.png'}
-                        alt="Cade's Resume"
-                        className="w-full max-w-[850px] h-auto mx-auto object-contain border border-gray-300 dark:border-gray-600 shadow-lg dark:shadow-gray-700/50 transition-colors duration-300"
+                        src={'/assets/images/CadeRousseau_Resume_FullStack-2.png'}
+                        alt="Cade's Resume - Back"
+                        className="w-full max-w-[600px] h-auto mx-auto object-contain border border-gray-300 dark:border-gray-600 shadow-lg dark:shadow-gray-700/50 transition-colors duration-300"
                     />
                 </div>
             </div>
