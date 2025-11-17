@@ -1,5 +1,7 @@
 # Portfolio Website
 
+[Live demo](https://rousseau-dev.com) · Deployed via AWS Amplify (CI/CD)
+
 A modern, responsive personal portfolio website showcasing projects, skills, and professional information for Cade Rousseau, a Software Engineering student at Milwaukee School of Engineering.
 
 ## 🌟 Features
@@ -95,7 +97,13 @@ npm run dev
 
 4. Open your browser and navigate to `http://localhost:5173`
 
-## 📜 Available Scripts
+## � Deployment
+
+This site is deployed at: https://rousseau-dev.com
+
+Deployment is handled via an AWS Amplify CI/CD pipeline. Commits pushed to the `main` branch trigger the Amplify build and deploy process, which runs the build steps and publishes the site automatically.
+
+## �📜 Available Scripts
 
 - `npm run dev` - Start the development server with hot module replacement
 - `npm run build` - Build the production-ready application
