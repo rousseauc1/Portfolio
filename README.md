@@ -1,190 +1,119 @@
 # Portfolio Website
 
-[Live demo](https://rousseau-dev.com) · Deployed via AWS Amplify (CI/CD)
+[Live site](https://rousseauc1.github.io) · Hosted on [GitHub Pages](https://pages.github.com/) with GitHub Actions CI/CD
 
-A modern, responsive personal portfolio website showcasing projects, skills, and professional information for Cade Rousseau, a Software Engineering student at Milwaukee School of Engineering.
+Personal portfolio for Cade Rousseau — Software Engineering student at Milwaukee School of Engineering. Built with React, TypeScript, and Tailwind CSS.
 
-## 🌟 Features
+## Features
 
-- **Responsive Design**: Fully responsive layout that works seamlessly across desktop, tablet, and mobile devices
-- **Dark/Light Mode**: Toggle between dark and light themes with persistent theme selection stored in localStorage
-- **Single Page Application**: Built with React Router for smooth navigation without page reloads
-- **Project Showcase**: Detailed pages for individual projects with images and videos
-- **Modern UI**: Clean, professional design with smooth transitions and animations
-- **Back to Top Navigation**: Quick scroll-to-top functionality for improved user experience
+- Responsive layout for desktop, tablet, and mobile
+- Dark / light theme with preference saved in `localStorage`
+- Client-side routing (React Router) with SPA fallback for GitHub Pages
+- Project showcase with dedicated detail pages
+- Experience section backed by JSON data
+- Downloadable resume
 
-## 🛠️ Technologies Used
+## Tech Stack
 
-### Core Technologies
-- **React 18.2** - Modern JavaScript library for building user interfaces
-- **TypeScript 5.3** - Type-safe JavaScript development
-- **Vite 6.2** - Next-generation frontend build tool for fast development
+| Area | Tools |
+| --- | --- |
+| UI | React 19, TypeScript 5 |
+| Build | Vite 8 |
+| Styling | Tailwind CSS 4, PostCSS |
+| Routing | React Router DOM 7 |
+| CI/CD | GitHub Actions → GitHub Pages |
 
-### Styling & UI
-- **Tailwind CSS 3.4** - Utility-first CSS framework for rapid UI development
-- **PostCSS** - CSS transformation and optimization
-- **Custom Design System** - Consistent color palette and styling throughout
-
-### Routing & State Management
-- **React Router DOM 6.22** - Client-side routing for single-page application
-- **Context API** - Theme management and global state
-
-### Development Tools
-- **ESLint** - Code linting for consistent code quality
-- **TypeScript ESLint** - TypeScript-specific linting rules
-
-## 📁 Project Structure
+## Project Structure
 
 ```
 Portfolio/
+├── .github/
+│   └── workflows/
+│       ├── ci.yml           # Lint, build, audit, smoke tests
+│       └── deploy.yml       # Build & deploy to GitHub Pages
 ├── public/
-│   └── assets/
-│       └── images/          # Project images, resume, and media assets
+│   └── assets/images/       # Project images, resume, media
 ├── src/
-│   ├── components/          # Reusable React components
-│   │   ├── BackToTopArrow.tsx
-│   │   ├── Footer.tsx
-│   │   ├── Header.tsx
-│   │   ├── NavBar.tsx
-│   │   ├── ProjectCard.tsx
-│   │   ├── ProjectNavigation.tsx
-│   │   └── ScrollToTop.tsx
-│   ├── context/
-│   │   └── ThemeContext.tsx # Dark/light theme management
-│   ├── pages/              # Main application pages
-│   │   ├── About.tsx
-│   │   ├── Home.tsx
-│   │   ├── Projects.tsx
-│   │   ├── ProjectOne.tsx
-│   │   ├── ProjectTwo.tsx
-│   │   ├── ProjectThree.tsx
-│   │   └── Resume.tsx
-│   ├── styles/
-│   │   └── global.css      # Global styles and Tailwind imports
-│   ├── App.tsx             # Main application component
-│   └── main.tsx            # Application entry point
+│   ├── components/          # Shared UI (Header, NavBar, cards, etc.)
+│   ├── context/             # ThemeContext
+│   ├── data/                # projects.json, experience.json
+│   ├── pages/               # Home, Projects, ProjectDetail, Experience, About, Resume
+│   ├── styles/              # Global styles & Tailwind
+│   ├── App.tsx
+│   └── main.tsx
 ├── index.html
 ├── package.json
-├── tailwind.config.js
-├── tsconfig.json
 └── vite.config.ts
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
-- Node.js (version 16 or higher)
-- npm or yarn package manager
+- Node.js 20+
+- npm
 
-### Installation
+### Setup
 
-1. Clone the repository:
 ```bash
-git clone https://github.com/rousseac1/portfolio.git
-cd portfolio
-```
-
-2. Install dependencies:
-```bash
+git clone https://github.com/rousseauc1/rousseauc1.github.io.git
+cd rousseauc1.github.io
 npm install
-```
-
-3. Start the development server:
-```bash
 npm run dev
 ```
 
-4. Open your browser and navigate to `http://localhost:5173`
+Open `http://localhost:5173`.
 
-## � Deployment
+## Scripts
 
-This site is deployed at: https://rousseau-dev.com
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Dev server with HMR |
+| `npm run build` | Typecheck + production build |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | ESLint |
 
-Deployment is handled via an AWS Amplify CI/CD pipeline. Commits pushed to the `main` branch trigger the Amplify build and deploy process, which runs the build steps and publishes the site automatically.
+## Deployment
 
-## �📜 Available Scripts
+The site is published with **GitHub Pages** from this repository (`rousseauc1.github.io`).
 
-- `npm run dev` - Start the development server with hot module replacement
-- `npm run build` - Build the production-ready application
-- `npm run preview` - Preview the production build locally
-- `npm run lint` - Run ESLint to check code quality
+On every push to `main` (or via workflow dispatch):
 
-## 📄 Pages Overview
+1. **CI** (`.github/workflows/ci.yml`) — install, lint, build, dependency audit, and a basic smoke test of the built site
+2. **Deploy** (`.github/workflows/deploy.yml`) — build the Vite app, copy `index.html` to `404.html` for SPA client-side routes, then publish the `dist/` artifact with `actions/deploy-pages`
 
-### Home (`/`)
-- Hero section with name and title
-- Introduction section with personal photo
-- Inspirational quote section
-- Timeline/GitHub activity visualization
+Live URL: https://rousseauc1.github.io
 
-### About (`/About`)
-- Personal background and education information
-- Career goals and aspirations
-- Key strengths and skills
-- Personal interests and hobbies
+## Pages
 
-### Projects (`/Projects`)
-- Overview of three main projects:
-  1. **Wordle Game** - JavaFX-based word game with team collaboration
-  2. **Travel Dataset Analysis** - Machine learning project analyzing travel data
-  3. **Personal Portfolio** - This website
+| Route | Description |
+| --- | --- |
+| `/` | Hero, intro, and featured content |
+| `/Projects` | Project grid |
+| `/Projects/:id` | Project detail (problem, process, media, tech) |
+| `/Experience` | Work and internship experience |
+| `/About` | Background, education, interests |
+| `/Resume` | Resume view and PDF download |
 
-### Individual Project Pages
-- Detailed project descriptions
-- Technologies used
-- Development process and learnings
-- Visual demonstrations (images/videos)
-- Navigation between projects
+Legacy routes `/ProjectOne`, `/ProjectTwo`, and `/ProjectThree` redirect to the corresponding project detail pages.
 
-### Resume (`/Resume`)
-- Professional resume display
-- Downloadable PDF version
+## Theme
 
-## 🎨 Design Features
+- **Light**: cream / warm brown palette (`#f5f0e6`, `#5c4d3f`)
+- **Dark**: gray-scale surfaces with light text
+- Theme preference persists in `localStorage`; transitions use a short CSS duration
 
-### Theme System
-- **Light Mode**: Warm, neutral tones with cream and brown color palette
-- **Dark Mode**: Modern dark theme with gray tones
-- **Persistent Storage**: Theme preference saved in browser localStorage
-- **Smooth Transitions**: 300ms transition animations for theme switching
+## About
 
-### Color Palette
-- Primary: `#5c4d3f` (warm brown)
-- Secondary: `#4a3e32` (darker brown)
-- Background Light: `#f5f0e6` (cream)
-- Background Dark: `#1b1b1d` (near black)
-- Dark Mode Background: Gray scale (`gray-600`, `gray-700`, `gray-800`)
+**Cade Rousseau**  
+Software Engineering (Data Science minor) · MSOE · Expected graduation May 2027 · Waukesha, WI
 
-### Responsive Design
-- Mobile-first approach
-- Breakpoints: `sm` (640px), `md` (768px), `lg` (1024px), `xl` (1280px)
-- Flexible grid layouts
-- Optimized images and media
+## License
 
-## 👤 About the Developer
+Copyright © 2026 Cade Rousseau. All Rights Reserved.
 
-**Cade Rousseau**
-- Software Engineering Major with Data Science Minor
-- Milwaukee School of Engineering (MSOE)
-- Expected Graduation: May 2027
-- Location: Waukesha, WI
-- Currently seeking internship opportunities
+Personal portfolio — not licensed for reuse, reproduction, or distribution without permission.
 
-## 📝 License
+## Contact
 
-Copyright © 2024 Cade Rousseau. All Rights Reserved.
-
-This is a personal portfolio project. The code and content are not available for use, reproduction, or distribution without explicit permission from the owner.
-
-## 🤝 Contributing
-
-This is a personal portfolio project and is not open for contributions.
-
-## 📧 Contact
-
-For inquiries or opportunities, please reach out through the contact information provided on the website.
-
----
-
-Built with ❤️ using React, TypeScript, and Tailwind CSS
+Reach out via the contact details on the live site.
