@@ -7,7 +7,7 @@
     "duration": "May 2026 - Aug 2026",
     "location": "Rochester, Minnesota, United States",
     "workStyle": "Hybrid",
-    "description": "Working on the Core AI Team for IBM i: AI and Open Source, building a lightweight, enterprise-grade Model Context Protocol (MCP) server in Java 17. The system enables clients in highly regulated industries (such as banking and healthcare) to securely build and deploy autonomous AI agents without relying on standard open-source Node.js dependency stacks. Also supported testing of a new agentic AI product for private previews with business clients.",
+    "description": "Working on the Core AI Team for IBM i: AI and Open Source. Contributing to enterprise AI tooling in Java, with a focus on Model Context Protocol (MCP) server development and enabling secure AI agent workflows. Also supported testing of a new agentic AI product ahead of private previews with business clients.",
     "skills": ["Java", "Model Context Protocol (MCP)", "AI Agents", "Enterprise Software", "Open Source"],
     "order": 1
   },
